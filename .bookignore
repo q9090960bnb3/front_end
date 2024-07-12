@@ -1,0 +1,10 @@
+/.gitignore
+/.devcontainer
+/.vscode
+/.bookignore
+/.gitattributes
+/plantuml.jar
+/dist
+/package-lock.json
+.LCK*
+/package.json

@@ -1,0 +1,38 @@
+{
+    "plugins": [
+        "password-z",
+        "todos",
+        "gbook-import-code",
+        "gbook-codetab",
+        "expandable-chapters-small",
+        "graphviz-and-plant-uml",
+        "hide-element",
+        "anchor-navigation-ex"
+    ],
+    "pluginsConfig": {
+        "password": {
+            "model": "global",
+            "settings": {
+                "password": "996633"
+            }
+        },
+        "graphviz-and-plant-uml": {
+            "Render": "PlantUMLServer",
+            "Server": "http://www.plantuml.com/plantuml"
+        },
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        },
+        "anchor-navigation-ex": {
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right",
+            "multipleH1": false,
+            "multipleH2": false,
+            "multipleH3": false,
+            "multipleH4": false,
+            "showLevelIcon": false,
+            "showLevel": false
+        }
+    }
+}
