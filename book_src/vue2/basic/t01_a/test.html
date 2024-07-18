@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+
+<body>
+  <div id="root">
+    <h1>hello, {{name}}, {{address}}, {{Date.now()}}</h1>
+  </div>
+  <script>
+    Vue.config.productionTip = false
+
+    new Vue({
+      el: '#root',  // 用于指定当前vue 实例为哪个容器服务,
+      data: {
+        name: 'word',
+        address: '成都'
+      }
+    })
+  </script>
+</body>
+
+</html>

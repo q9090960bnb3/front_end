@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+<body>
+  <div id="root">
+    {{name}}
+    <hr>
+    <!-- 所有的解析并替换，显示的是原始值，不会解析标签 -->
+    <div v-text="name"></div>
+    <div v-text="str"></div>
+
+  </div>
+  <script>
+    /*
+      v-bind: 单向绑定
+      v-model: 双向绑定
+      v-for:
+      v-on: @
+      v-if:
+      v-else
+      v-show
+    */
+    Vue.config.productionTip = false
+    
+    new Vue({
+      el: '#root',
+      data:{
+        name: '南图小学',
+        str: '<h4>xxxxx</h4>'
+      }
+    })
+  </script>
+</body>
+</html>

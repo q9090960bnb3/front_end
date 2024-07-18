@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+
+<body>
+  <div id="root">
+  </div>
+  <script>
+
+    /*
+    一个重要内置关系： VueComponent.prototype.__proto__ === Vue.prototype
+        便于 vc 可以访问到 Vue 原型上的实例和方法
+    */
+
+    Vue.config.productionTip = false
+    Vue.prototype.headname = '只能这么用'
+
+    const school = Vue.extend({
+      template:`
+        <div>
+          <h2>学校名称:{{schoolName}}</h2>
+          <h2>学校地址:{{schoolAddress}}</h2> 
+          <h3>{{headname}}</h3> 
+        </div>
+      `,
+      data() {
+        return {
+          schoolName: '南图小学',
+          schoolAddress: '金城'
+        }
+      },
+    })
+    
+    
+    new Vue({
+        el: '#root',
+        template: `
+            <school></school>
+        `,
+      data:{
+        msg: '你好',
+        // headname: 'main name'
+      },
+      components:{
+        school
+      }
+    })
+
+    console.log('@end',school.prototype.__proto__ === Vue.prototype);
+
+  </script>
+</body>
+
+</html>

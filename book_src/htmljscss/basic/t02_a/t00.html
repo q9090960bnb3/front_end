@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button onclick="handleClick(this)">点我</button>
+  <script>
+    window.addEventListener('globalEventName', function (event) {
+      console.log('接收到全局事件:', event.detail);
+    });
+
+    function handleClick(el) {
+      const event = new CustomEvent('globalEventName', {
+        detail: '这里是传递的数据'
+      });
+      window.dispatchEvent(event);
+    }
+
+    // ... 在某个适当的时机，比如组件卸载时，销毁全局事件 ...
+    // window.removeEventListener('myCustomEvent', myEventListener);
+  </script>
+</body>
+
+</html>

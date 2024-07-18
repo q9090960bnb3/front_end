@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+<body>
+  <div id="root">
+    <h1>{{msg}}</h1>
+    <school></school>
+    <hr>
+    <student></student>
+    <hr>
+    <!-- 脚手架可以处理自闭合标签 -->
+    <student></student>  
+    <hr>
+    <hello></hello>
+  </div>
+  <script>
+    Vue.config.productionTip = false
+
+    // 简写形式 可以去掉Vue.extend
+    const school = Vue.extend({
+      template:`
+        <div>
+          <h2>学校名称:{{schoolName}}</h2>
+          <h2>学校地址:{{schoolAddress}}</h2>  
+          <button @click="tipSchool">点我提示学校名</button>
+        </div>
+      `,
+      data() {
+        return {
+          schoolName: '南图小学',
+          schoolAddress: '金城'
+        }
+      },
+      methods: {
+        tipSchool() {
+          alert(this.schoolName)
+        }
+      },
+    })
+
+    const student = Vue.extend({ 
+      template: `
+        <div>
+          <h2>学生姓名:{{name}}</h2>
+          <h2>学生年龄:{{age}}</h2>  
+        </div>
+      `,
+      data() {
+        return {
+          name: '小张',
+          age: 30
+        }
+      }
+    })
+
+    const hello = Vue.extend({
+      name: 'helloworld', // 开发者工具显示自定义名称
+      template: `
+        <div>
+          <h2>你好</h2>
+        </div>
+      `
+    })
+
+    //注册全局 所有vm都可以使用
+    Vue.component('hello', hello)
+
+    new Vue({
+      el: '#root',
+      data:{
+        msg: '你好'
+      },
+      components:{
+        school,
+        student
+      }
+    })
+
+   /*
+      组件名推荐： 'my-school'  'MySchool'(脚手架才能使用)
+   */
+
+  </script>
+</body>
+</html>

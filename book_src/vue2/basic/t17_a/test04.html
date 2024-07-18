@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+
+<body>
+  <div id="root">
+    <h1>{{msg}}</h1>
+    <school></school>
+  </div>
+  <script>
+    Vue.config.productionTip = false
+
+    /*
+        school 组件本质是 VueComponent 的构造函数，非程序员定义，由 Vue.extends 生成, 且都为一个全新VueComponent
+    */
+    const school = Vue.extend({
+      template:`
+        <div>
+          <h2>学校名称:{{schoolName}}</h2>
+          <h2>学校地址:{{schoolAddress}}</h2>  
+        </div>
+      `,
+      data() {
+        return {
+          schoolName: '南图小学',
+          schoolAddress: '金城'
+        }
+      }
+    })
+
+    console.log('@', school);
+
+    new Vue({
+      el: '#root',
+      data:{
+        msg: '你好'
+      },
+      components:{
+        school
+      }
+    })
+
+   /*
+      组件名推荐： 'my-school'  'MySchool'(脚手架才能使用)
+   */
+
+  </script>
+</body>
+
+</html>

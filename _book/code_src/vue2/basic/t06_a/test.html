@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+
+<body>
+  <div id="root">
+    <h2>欢迎来到{{name}}学习！！</h2>
+    <button v-on:click="showInfo">点击提示信息</button><br>
+
+    <!-- 简写方式, 可以传参和event -->
+    <button @click="showInfo2(67, $event)">点击提示信息2</button><br>
+    <!-- <button @click="showInfo3(88)">点击提示信息3</button> 不能这么使用 -->
+
+  </div>
+  <script>
+    Vue.config.productionTip = false
+    
+    new Vue({
+      el:'#root',
+      data:{
+        name: '南图小学'
+      },
+      methods:{
+        showInfo(event){
+          console.log(event);
+          alert('你好')
+        },
+        showInfo2(num, event){
+          console.log(num);
+          console.log(event);
+        },
+        showInfo3(num){
+          return (event) => {
+            console.log(num);
+            console.log(event);
+          }
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

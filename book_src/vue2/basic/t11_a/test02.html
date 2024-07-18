@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+<body>
+  <div id="root">
+
+    <h2>人员列表</h2>
+    <button @click="add">添加一个人</button>
+    <ul>
+      <!-- <li v-for="p in persons" :key="p.id">
+        {{p.name}}-{{p.age}}
+      </li> -->
+      <!-- key使用 index diff会出现问题，所以还是要使用 id来避免 -->
+      <li v-for="(p, index) in persons" :key="index">
+        {{p.name}}-{{p.age}}
+        <input type="text">
+      </li>
+    </ul>
+
+    
+  <script>
+  
+    Vue.config.productionTip = false
+    
+    new Vue({
+      el:'#root',
+      data:{
+        persons:[
+          {id:'001', name:'张三', age:21},
+          {id:'002', name:'李四', age:31},
+          {id:'003', name:'王五', age:61},
+        ]
+      },
+      methods: {
+        add(){
+          const p = {id:'004', name:'hello', age:1000}
+
+          this.persons = [p, ...this.persons]
+        }
+      },
+    })
+  </script>
+</body>
+</html>

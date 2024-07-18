@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+<body>
+  <div id="root">
+    姓：<input type="text" v-model="firstName"> <br/>
+    名：<input type="text" v-model="lastName"> <br/>
+    全名：<span>{{fullName}}</span>
+  </div>
+  <script>
+    Vue.config.productionTip = false
+    
+    new Vue({
+      el: '#root',
+      data: { 
+        firstName: '张',
+        lastName: '三',
+        fullName: '张-三'
+      }, 
+      computed:{
+        // 简写 （只考虑读取不考虑修改才能简写）
+        fullName(){
+          return this.firstName + '-' + this.lastName
+        }
+        // fullName:{
+        //   // get:当有人读取时，get就会被调用
+        //   // 初次读取时被调用（有缓存），所依赖得值发生变化也会调用
+        //   get(){
+        //     return this.firstName + '-' + this.lastName
+        //   },
+
+        //   // set 当fullname被修改时被调用
+        //   set(value){
+        //     const arr = value.split('-')
+        //     this.firstName = arr[0]
+        //     this.lastName = arr[1]
+        //   }
+        // }
+      },
+      watch:{
+        firstName(newValue){
+          this.fullName = newValue + '-' + this.lastName
+        },
+        lastName(newValue) {
+          this.fullName = this.firstName + '-' + newValue
+        }
+      }
+    })
+  </script>
+</body>
+</html>

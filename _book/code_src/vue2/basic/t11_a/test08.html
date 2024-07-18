@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+
+<body>
+  <script>
+    let data = {
+      name: '校长',
+      addr: 'beijing'
+    }
+
+    // ?
+    // Object.defineProperties(data, 'name', {
+    //   get() {
+    //     return data.name  // 会死循环嵌套
+    //   },
+    //   set(val){
+    //     data.name = val
+    //   }
+    // })
+
+    const obs = new Observer(data)
+    console.log('obs:', obs);
+
+    let vm = {}
+
+    vm._data = data = obs
+
+    function Observer(obj){
+      const keys = Object.keys(obj)
+
+      // 遍历
+      keys.forEach(k => {
+        Object.defineProperties(this, k, {
+          get(){
+            this.k = obj[k]
+          },
+          set(val) {
+            console.log(`${k}, 被改了， 我要去解析模板，生成虚拟dom。。开始工作了...`);
+            obj[k] = val
+          }
+        })
+      })
+    }
+    
+  </script>
+</body>
+
+</html>

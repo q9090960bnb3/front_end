@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- v-cloak Vue成功加载后对应标签消失，配合style来解决模板渲染造成的异常问题 -->
+  <div v-cloak id="root">
+    {{name}}
+  </div>
+
+  <script>
+    Vue.config.productionTip = false
+    
+    new Vue({
+      el: '#root',
+      data:{
+        name: '南图小学',
+        str: '<h4>xxxxx</h4>',
+        str2: ''
+      }
+    })
+  </script>
+</body>
+
+</html>

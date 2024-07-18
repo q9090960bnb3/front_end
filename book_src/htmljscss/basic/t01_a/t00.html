@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- HTML -->
+  <button id="myButton">Click me!</button>
+
+  <script>
+    // 获取按钮元素
+    const button = document.getElementById('myButton');
+
+    // 定义一个自定义事件
+    const myEvent = new CustomEvent('myCustomEvent', {
+      detail: { message: 'Hello from custom event!' },
+      bubbles: true,
+      cancelable: true
+    });
+
+    // 添加事件监听器
+    button.addEventListener('myCustomEvent', function (event) {
+      console.log(event.detail.message);
+    });
+
+    // 当按钮被点击时，触发自定义事件
+    button.addEventListener('click', function () {
+      this.dispatchEvent(myEvent);
+    });
+  </script>
+</body>
+
+</html>

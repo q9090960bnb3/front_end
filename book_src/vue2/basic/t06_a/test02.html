@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../common/vue2_6_14/vue.js"></script>
+  <style>
+    .demo1{
+      height: 50px;
+      background-color: skyblue;
+    }
+
+    *{
+      margin: 20px;
+    }
+
+    .box1{
+      padding: 5px;
+      background-color: skyblue;
+    }
+
+    .box2{
+      background-color: orange;
+    }
+
+    .list{
+      width: 200px;
+      height: 50px;
+      background-color: peru;
+      overflow: auto;
+    }
+
+     li{
+      height: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <h2>欢迎来到{{name}}</h2>
+    <a href="www.baidu.com" @click="showInfo">点我提示信息</a><br>
+
+    <!-- 使用修饰符 -->
+
+    <!-- 阻止默认行为 -->
+    <a href="www.baidu.com" @click.prevent="showInfo2">点我提示信息2</a><br>
+
+    <!-- 阻止冒泡 -->
+    <div class="demo1" @click="showDemo1Info">
+      <button @click.stop="showDemo1Info">点我提示信息demo1</button>
+    </div>
+
+    <!-- 阻止冒泡 和默认事件-->
+    <div class="demo1" @click="showDemo1Info">
+      <a href="http://www.baidu.com" @click.stop.prevent="showInfo2">点我提示信息xxx</a><br>
+    </div>
+
+    <!-- 事件只触发一次 -->
+    <button @click.once="showDemo2Info">点我提示信息demo2</button>
+
+    <!-- 使用事件的捕获方式 不使用点击div2则冒泡显示 2 1 ，使用为 1 2-->
+    <div class="box1" @click.capture="showMsg(1)">
+      div1
+      <div class="box2" @click="showMsg(2)">
+        div2
+      </div>
+    </div>
+
+    <!-- event.target是当前元素时才触发冒泡事件 -->
+    <div class="box1" @click.self="showInfoDemo2">
+      div1
+      <div class="box2" @click="showInfoDemo2">
+        div2
+      </div>
+    </div>
+
+    <!-- passive 默认行为立即执行，无需等待事件执行完毕 -->
+    <!-- @wheel 滚轮事件 @scroll 滚动条事件 -->
+    <ul @wheel.passive="demo" class="list">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+  </div>
+  <script>
+    Vue.config.productionTip = false
+    
+    new Vue({
+      el: '#root',
+      data: {
+        name: '南图实验学校'
+      },
+      methods:{
+        showInfo(e) {
+          e.preventDefault() // 阻止跳转
+          alert('你好')
+        },
+        showInfo2() {
+          alert('你好')
+        },
+        showDemo1Info(e) {
+          // e.stopPropagation() 
+          alert('demo1')
+        },
+        showDemo2Info() {
+          alert('demo2')
+        },
+        showMsg(msg){
+          console.log(msg);
+        },
+        showInfoDemo2(e){
+          console.log(e.target);
+        },
+        demo(){
+          for (let index = 0; index < 10000; index++) {
+            console.log('$');            
+          }
+          console.log('@');
+        }
+      }
+    })
+  </script>
+</body>
+</html>

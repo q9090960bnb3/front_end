@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+<body>
+  <div id="root">
+    <h2 :style="{opacity}">{{name}}</h2>
+  </div>
+  <script>
+    Vue.config.productionTip = false
+
+    new Vue({
+      el: '#root',
+      data: {
+        name: '南图小学',
+        opacity: 0.6
+      },
+      // DOM渲染之后
+      mounted() {
+        setInterval(() => {
+          this.opacity -= 0.01
+          if (this.opacity <= 0) this.opacity = 1
+        }, 16)
+      },
+    })
+
+
+  </script>
+</body>
+</html>

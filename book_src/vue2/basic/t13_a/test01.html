@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+  <script src="../../../../lib/dayjs/dayjs.min.js"></script>
+</head>
+<body>
+  <div id="root">
+    <h3>显示格式化后的时间</h3>
+    <h3>{{time}}</h3>
+
+    <h3>计算属性实现：{{fmttime}}</h3>
+    <h3>methods实现：{{fmttimeFunc()}}</h3>
+    <h3>过滤器实现：{{time | timeFormatter}}</h3>
+    <h3>过滤器传参实现：{{time | timeFormatter2('YYYY-MM-DD')}}</h3>
+    <h3>多过滤器实现：{{time | timeFormatter2('YYYY-MM-DD') | myslice}}</h3>
+    <h3>其他标签使用过滤器</h3>
+    <h4 :x="msg | myslice">测试，查看源码标签是否改动</h4>
+  </div>
+
+  <div id="root2">
+    <h3>使用全局过滤器</h3>
+    {{'hello_word' | myslice}}
+  </div>
+  <script>
+    Vue.config.productionTip = false
+
+    // 全局过滤器
+    Vue.filter('myslice', function (str) {
+      return str.slice(0, 4)
+    })
+
+    new Vue({
+      el: '#root',
+      data: {
+        time: 1646902230778,
+        msg: 'bigandbig'
+      },
+      computed: {
+        fmttime() {
+          return dayjs(this.time).format('YYYY-MM-DD HH:mm:ss')
+        }
+      },
+      methods: {
+        fmttimeFunc() {
+          return dayjs(this.time).format('YYYY-MM-DD HH:mm:ss')
+        }
+      },
+      // 局部过滤器
+      filters: {
+        timeFormatter(time) {
+          return dayjs(time).format('YYYY-MM-DD HH:mm:ss')
+        },
+        timeFormatter2(time, formatStr = 'YYYY-MM-DD HH:mm:ss') {
+          return dayjs(time).format(formatStr)
+        },
+        // myslice(str){
+        //   return str.slice(0, 4)
+        // }
+      }
+    })
+
+    new Vue({
+      el: '#root2'
+    })
+  </script>
+</body>
+</html>

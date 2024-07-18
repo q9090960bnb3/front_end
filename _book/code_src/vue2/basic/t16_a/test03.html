@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <h2>当前的n值是:{{n}}</h2>
+    <button @click="add">点我+1</button>
+    <button @click="bye">点我销毁</button>
+  </div>
+  <script>
+    Vue.config.productionTip = false
+
+    new Vue({
+      el: '#root',
+      data: {
+        n: 0
+      },
+      methods: {
+        add(){
+          this.n++
+        },
+        bye(){
+          console.log('bye');
+          this.$destroy() // 清理它与其它实例的连接，解绑它的全部指令及自定义事件监听器， 原生的不会销毁
+        }
+      },
+      // 无数据代理，无方法
+      beforeCreate() {
+        console.log('beforeCreate');
+      },
+      // 有数据代理和对应方法
+      created() {
+        console.log('created');
+      },
+      // 解析完模板，虚拟dom创建后
+      beforeMount() {
+        console.log('beforeMount');
+      },
+      // 真实dom创建后
+      mounted() {
+        console.log('mounted');
+      },
+      // 数据更新之前
+      beforeUpdate() {
+        console.log("beforeUpdate");
+      },
+      // 数据更新之后
+      updated() {
+        console.log("beforeUpdate");
+      },
+      // 马上销毁
+      beforeDestroy() {
+        // 
+        console.log("beforeDestroy");
+      },
+      destroyed() {
+        console.log("destroyed");
+      }
+    })
+
+
+  </script>
+</body>
+
+</html>

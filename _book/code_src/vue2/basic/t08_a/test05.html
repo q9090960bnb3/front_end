@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+<body>
+  <div id="root">
+    <!-- <h1>今天天气很{{isHot?:'炎热':'寒冷'}}</h1> -->
+    <h1>今天天气很{{info}}</h1>
+    <button @click="changeWeather">点我切换天气</button>
+    <hr>
+    <h3>a的值是：{{numbers.a}}, 示例只监视a</h3>
+    <button @click="numbers.a++">点我a++</button>
+    <h3>b的值是：{{numbers.b}}, 示例只监视b</h3>
+    <button @click="numbers.b++">点我b++</button>
+  </div>
+  <script> 
+    Vue.config.productionTip = false
+    
+    new Vue({
+      el:'#root',
+      data:{
+        isHot: true,
+        numbers:{
+          a:1,
+          b:1
+        }
+      },
+      computed:{
+        info(){
+          return this.isHot?'炎热':'凉爽'
+        }
+      },
+      methods: {
+        changeWeather(){
+          this.isHot = !this.isHot
+        }
+      },
+      watch:{
+        isHot:{
+          immediate:true, //初始化时让 hander调用一下
+          // isHot被修改了被调用
+          handler(newValue, oldValue){
+            console.log(`当前值:${newValue}, 历史值:${oldValue}`);
+          }
+        },
+        // 监视多级结构属性变化
+        numbers:{
+          deep:true, // 否则只监视numbers ，其为一个内存地址，子内容变化不会被监视到，deeptrue才会递归监视
+          handler(newValue, oldValue){
+            console.log(`当前值:${newValue.a}, 历史值:${oldValue.a}`);
+            console.log(`当前值:${newValue.b}, 历史值:${oldValue.b}`);
+          }
+        }
+      }
+    })
+  </script>
+</body>
+</html>

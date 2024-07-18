@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/vue2_6_14/vue.min.js"></script>
+</head>
+<body>
+  <div id="root">
+    <h2>当前n是：{{n}}</h2>
+    <button @click="n++">点我n+1</button>
+
+    <!-- 使用v-show 条件渲染 -->
+    <!-- <h2 v-show="true">欢迎来到{{name}}</h2> -->
+
+
+    <!-- false 时完全剔除 -->
+    <!-- <h2 v-if="true">欢迎来到{{name}}</h2>  -->
+
+    <!-- <div v-if="n==1">Angular</div>
+    <div v-if="n==2">React</div>
+    <div v-if="n==3">Vue</div> -->
+
+
+    <div v-if="n==1">Angular</div>
+    <div v-else-if="n==2">React</div>
+    <div v-else-if="n==3">Vue</div>
+    <div v-else>hh</div>
+
+    <hr>
+
+    <!-- template不会改变结构，但只能使用 v-if -->
+    <template v-if="n==1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </template>
+  </div>
+  <script>
+    Vue.config.productionTip = false
+    
+    new Vue({
+      el: '#root',
+      data:{
+        name:'南图',
+        n: 0
+      }
+    })
+  </script>
+</body>
+</html>
