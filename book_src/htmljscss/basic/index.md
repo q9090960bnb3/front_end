@@ -65,3 +65,13 @@ sessionStorage 更适合临时存储数据，比如表单输入的缓存、购�
 ```
 {% endcodetab %}
 
+## pubsub 自定义发布订阅
+
+{% codetab %}
+@import "t03_a/t00.html"
+```txt
+```
+```txt
+```
+{% endcodetab %}
+

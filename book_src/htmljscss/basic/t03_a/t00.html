@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../../../lib/my/pubsub.js"></script>
+</head>
+<body>
+  <button onclick="handleClick(this)">点我</button>
+  
+  <script>
+    eventCenter.subscribe("hello", function (data) {
+      console.log('收到事件:', data);
+    });
+
+    function handleClick(el) {
+      eventCenter.publish("hello", "我被点了")
+    }
+  </script>
+</body>
+</html>

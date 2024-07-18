@@ -57,3 +57,31 @@
 ```txt
 ```
 {% endcodetab %}
+
+## 全局事件总线示例
+
+{% codetab %}
+@import "t04_a/src/main.js" {title: "main.js"}
+@import "t04_a/src/App.vue" {lang: "html", title: "App.vue"}
+@import "t04_a/src/components/MyHeader.vue"  {lang: "html", title: "MyHeader.vue"}
+@import "t04_a/src/components/MyList.vue"  {lang: "html", title: "MyList.vue"}
+@import "t04_a/src/components/MyItem.vue"  {lang: "html", title: "MyItem.vue"}
+@import "t04_a/src/components/MyFooter.vue"  {lang: "html", title: "MyFooter.vue"}
+```txt
+```
+{% endcodetab %}
+
+## 发布订阅示例
+
+{% codetab %}
+@import "t05_a/src/main.js" {title: "main.js"}
+@import "t05_a/src/App.vue" {lang: "html", title: "App.vue"}
+@import "t05_a/src/components/MyHeader.vue"  {lang: "html", title: "MyHeader.vue"}
+@import "t05_a/src/components/MyList.vue"  {lang: "html", title: "MyList.vue"}
+@import "t05_a/src/components/MyItem.vue"  {lang: "html", title: "MyItem.vue"}
+@import "t05_a/src/components/MyFooter.vue"  {lang: "html", title: "MyFooter.vue"}
+```txt
+```
+{% endcodetab %}
+
+

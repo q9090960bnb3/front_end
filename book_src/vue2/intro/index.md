@@ -78,3 +78,18 @@
 ```txt
 ```
 {% endcodetab %}
+
+## 使用发布订阅
+
+```sh
+pnpm install pubsub-js
+```
+
+{% codetab %}
+@import "t07_a/src/main.js" {title: "main.js"}
+@import "t07_a/src/App.vue" {lang: "html", title: "App.vue"}
+@import "t07_a/src/components/Student.vue"  {lang: "html", title: "Student.vue"}
+@import "t07_a/src/components/School.vue"  {lang: "html", title: "School.vue"}
+```txt
+```
+{% endcodetab %}
