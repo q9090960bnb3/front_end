@@ -69,9 +69,11 @@ sessionStorage 更适合临时存储数据，比如表单输入的缓存、购�
 
 {% codetab %}
 @import "t03_a/t00.html"
+@import "../../../lib/my/pubsub.js"
 ```txt
 ```
 ```txt
 ```
 {% endcodetab %}
+
 

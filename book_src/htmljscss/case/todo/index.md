@@ -52,3 +52,16 @@
 ## 全局事件示例
 
 同上
+
+## 消息订阅和发布
+
+{% codetab %}
+@import "t03_a/index.html"
+@import "t03_a/index.css"
+@import "t03_a/index.js"
+@import "../../../../lib/my/pubsub.js"
+```txt
+```
+{% endcodetab %}
+
+## 编辑功能
