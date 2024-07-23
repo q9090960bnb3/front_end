@@ -93,6 +93,7 @@ div {
 @import "tSina.html" {title: "新浪导航"}
 @import "tXiaomi.html" {title: "小米侧边栏"}
 @import "tall.html" {title: "综合示例"}
+@import "tWeb_display.html" {title: "常见网页布局"}
 
 ```txt
 ```

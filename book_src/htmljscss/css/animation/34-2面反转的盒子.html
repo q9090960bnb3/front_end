@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        perspective: 500px;
+      }
+      .box {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 100px auto;
+        /* 让背面保留3d */
+        transform-style: preserve-3d;
+        transition: all 1s;
+      }
+
+      .box:hover {
+        transform: rotateY(180deg);
+      }
+
+      .front,
+      .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        line-height: 300px;
+      }
+
+      .front {
+        background-color: pink;
+        /* 必须加 方法一,保证他们不在同一层 去掉 z-indx */
+        transform: translateZ(1px);
+
+        /* 必须加 方法二 backface-visibility:hidden 需要z-index */
+        /* backface-visibility: hidden; */
+        /* z-index: 1; */
+      }
+
+      .back {
+        background-color: purple;
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="front">heimacxy</div>
+      <div class="back">我在这儿等你</div>
+    </div>
+  </body>
+</html>

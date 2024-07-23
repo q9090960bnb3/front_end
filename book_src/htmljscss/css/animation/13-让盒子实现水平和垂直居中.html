@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      div {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background-color: pink;
+
+        /* 1.translate中的%是相对于盒子自身高度或宽度来对比 */
+        /* transform: translateX(50%); */
+      }
+
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+        /* 以前计算方式 */
+        /* margin: -100px 0 0 -100px; */
+
+        /* transform 直接计算 */
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div><p></p></div>
+    <!-- translate对行内标签无效 -->
+    <span>123</span>
+  </body>
+</html>

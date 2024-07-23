@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <h4>当前求和为：<span id="count">0</span></h4>
+    <h4>当前求和10倍为：<span id="count10">0</span></h4>
+    <select id="select">
+      <option value="1" selected>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <button onclick="increment()">+</button>&nbsp;
+    <button onclick="decrement()">-</button>&nbsp;
+    <button onclick="incrementIfOdd()">当前为奇数再加</button>&nbsp;
+    <button onclick="incrementAsync()">异步加</button>&nbsp;
+  </div>
+  <script>
+    const countElem = document.getElementById('count')
+    const count10Elem = document.getElementById('count10')
+    const selectElem = document.getElementById('select')
+
+    /**
+     * @description: 
+     * @param {{
+     *  count: number,
+     *  select: number
+     * }} state
+     * @return {*}
+     */
+    function setResult(state) {
+      countElem.innerText = state.count
+      count10Elem.innerText = state.count * 10
+    }
+
+    /**
+     * @description: 获取计数和选择值
+     * @return {{
+     *  count: number,
+     *  select: number
+     * }}
+     */
+    function getState() {
+      return {
+        count: parseInt(countElem.innerText),
+        select: parseInt(selectElem.value)
+      }
+    }
+
+    function increment() {
+      const state = getState()
+      setResult({
+        count: state.count + state.select,
+        select: state.select
+      })
+    }
+
+    function decrement() {
+      const state = getState()
+      setResult({
+        count: state.count - state.select,
+        select: state.select
+      })
+    }
+
+    function incrementIfOdd() {
+      const state = getState()
+      if (state.count % 2 !== 0) {
+        setResult({
+          count: state.count + state.select,
+          select: state.select
+        })
+      }
+    }
+
+    function incrementAsync() {
+      setTimeout(() => {
+        const state = getState()
+        setResult({
+          count: state.count + state.select,
+          select: state.select
+        })
+      }, 1000)
+    }
+  </script>
+</body>
+
+</html>

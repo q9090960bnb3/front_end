@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 移动盒子三种方式 1. 定位  2. 盒子外边距 3. 2d转换移动 */
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        /* x: x轴移动 y y轴移动 */
+        /* transform: translate(x, y); */
+        /* transform: translate(10px, 10px); */
+
+        /* 只移动x */
+        /* transform: translateX(10px); */
+        /* 或 */
+        /* transform: translate(10px, 0); */
+        /* y轴同理 */
+      }
+
+      div:first-child {
+        transform: translate(50px, 50px);
+      }
+      div:last-child {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+  </body>
+</html>

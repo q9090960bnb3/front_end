@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 必须时input中具有 value属性 */
+      input[value] {
+        color: pink;
+      }
+
+      /* 根据input值选择 */
+      input[type='text'] {
+        color: pink;
+      }
+
+      /* 选择属性值开头 */
+      div[class^='icon'] {
+        color: pink;
+      }
+
+      /* 选择属性值结尾 */
+      section[class$='data'] {
+        color: blue;
+      }
+
+      /* 类选择器 属性选择器 伪类选择器 权重都是 10 */
+    </style>
+  </head>
+  <body>
+    <!-- 属性选择器 -->
+    <input type="text" value="请输入用户名" />
+    <input type="text" />
+
+    <hr />
+    <!-- 属性=值来选择 -->
+    <input type="text" name="" id="" />
+    <input type="password" name="" id="" />
+
+    <hr />
+
+    <!-- 属性值某个开头 -->
+    <div class="icon1">小图标1</div>
+    <div class="icon2">小图标2</div>
+    <div class="icon3">小图标3</div>
+    <div class="icon4">小图标4</div>
+    <div>haha</div>
+
+    <!-- 属性值某个结尾 -->
+    <section class="icon1-data">安其拉</section>
+    <section class="icon2-data">哥斯达</section>
+    <section class="icon3-ico">xxx</section>
+  </body>
+</html>

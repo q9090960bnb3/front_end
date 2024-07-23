@@ -65,3 +65,14 @@
 {% endcodetab %}
 
 ## 编辑功能
+
+{% codetab %}
+@import "t04_a/index.html"
+@import "t04_a/index.css"
+@import "t04_a/todoCentor.js"
+@import "t04_a/elementCentor.js"
+@import "t04_a/index.js"
+@import "../../../../lib/my/pubsub.js"
+```txt
+```
+{% endcodetab %}

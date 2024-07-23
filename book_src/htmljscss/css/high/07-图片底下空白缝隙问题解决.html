@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        /* 空白缝隙是基线引起的 */
+        border: 1px solid red;
+      }
+      .xx img {
+        /* 只要不是基线就行了 提倡使用*/
+        vertical-align: bottom;
+      }
+      .yy img {
+        /* 因为块级元素没有verical-align属性 */
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="xx"><img src="images/ldh.jpg" alt="" /></div>
+    <div class="yy"><img src="images/ldh.jpg" alt="" /></div>
+  </body>
+</html>
