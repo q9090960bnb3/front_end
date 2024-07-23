@@ -12,6 +12,8 @@
 ```
 ```txt
 ```
+```txt
+```
 {% endcodetab %}
 
 ### vuex 基础版本
@@ -65,6 +67,8 @@
 ```
 ```txt
 ```
+```txt
+```
 {% endcodetab %}
 
 ### vuex 使用 vuexmap 2
@@ -78,6 +82,8 @@
 @import "t04_a/src/App.vue" {lang: "html", title: "App.vue"}
 @import "t04_a/src/components/Count.vue"  {lang: "html", title: "Count.vue"}
 @import "t04_a/src/components/MapCount.vue"  {lang: "html", title: "MapCount.vue"}
+```txt
+```
 ```txt
 ```
 ```txt
@@ -96,6 +102,8 @@
 ```
 ```txt
 ```
+```txt
+```
 {% endcodetab %}
 
 ### vuex 模块化
@@ -110,6 +118,8 @@
 ```
 ```txt
 ```
+```txt
+```
 {% endcodetab %}
 
 ### vuex 模块化最终版
@@ -118,10 +128,10 @@
 @import "t07_a/src/main.js" {title: "main.js"}
 @import "t07_a/src/store/index.js" {title: "store/index.js"}
 @import "t07_a/src/store/count.js" {title: "store/count.js"}
-@import "t07_a/src/store/persons.js" {title: "store/person.js"}
+@import "t07_a/src/store/persons.js" {title: "store/persons.js"}
 @import "t07_a/src/App.vue" {lang: "html", title: "App.vue"}
 @import "t07_a/src/components/Count.vue"  {lang: "html", title: "Count.vue"}
-@import "t07_a/src/components/Person.vue"  {lang: "html", title: "MapCount.vue"}
+@import "t07_a/src/components/Person.vue"  {lang: "html", title: "Person.vue"}
 ```txt
 ```
 ```txt
