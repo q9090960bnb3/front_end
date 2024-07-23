@@ -28,7 +28,7 @@
   * [cmd](book_src/vue2/cmd/index.md)
   * [basic](book_src/vue2/basic/index.md)
   * [intro](book_src/vue2/intro/index.md)
-  * [vuex](book_src/vue2/vuex/index.md)
+  * [vuex](book_src/vue2/vuex/README.md)
   * [router](book_src/vue2/router/index.md)
   * [case](book_src/vue2/case/index.md)
     * [todo](book_src/vue2/case/todo/index.md)
