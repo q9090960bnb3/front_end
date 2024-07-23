@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        font-size: 20px;
+        width: 0;
+        height: 30px;
+        background-color: pink;
+        /* step 分几步完成动画 有了steps 就不要写ease 等曲线*/
+        animation: w 4s steps(10) forwards;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      @keyframes w {
+        from {
+          width: 0;
+        }
+        to {
+          width: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>人口特色滿意要去財</div>
+  </body>
+</html>

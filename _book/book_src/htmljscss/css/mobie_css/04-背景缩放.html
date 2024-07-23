@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 500px;
+        height: 500px;
+        border: 2px solid red;
+        background: url(images/dog.jpg) no-repeat;
+        /* 只写一个肯定是宽度,高度等比例缩放 */
+        /* background-size: 250px 250px; */
+        /* background-size: 500px; */
+
+        /* 百分比 */
+        /* background-size: 50%; */
+
+        /* cover, 完全覆盖 */
+        /* background-size: cover; */
+
+        /* contain 高度或宽度等比例拉伸,如果达到width 或height 则不在拉伸 */
+        background-size: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

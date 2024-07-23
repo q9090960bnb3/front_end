@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 需求:页面一打开,盒子从左走到右 */
+      /* 1.定义动画 */
+      @keyframes move {
+        /* 等价于 0% */
+        from {
+          transform: translate(0, 0);
+        }
+        /* 等价于 100% */
+        to {
+          transform: translate(1000px, 0);
+        }
+      }
+      /* 做多个状态的动画序列 keyframe 关键帧 */
+      @keyframes circle {
+        0%,
+        100% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(500px, 0);
+        }
+        50% {
+          transform: translate(500px, 500px);
+        }
+        75% {
+          transform: translate(0, 500px);
+        }
+      }
+      div {
+        height: 200px;
+        width: 200px;
+        background-color: pink;
+
+        /* 2.调用动画 */
+
+        animation-name: circle;
+        /* 持续时间 */
+        animation-duration: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

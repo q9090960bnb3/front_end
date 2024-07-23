@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 50*50 (css)图片 放大手机 如果物理像素比为2 会放大2倍,变得模糊 
+        我们采取的是放 一个 100*100 图片 缩放为 50*50
+        我们准备的图片比实际的大2倍,就称为2倍图
+      */
+      img:nth-child(2) {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 模糊的 -->
+    <img src="images/apple50(1).jpg" alt="" />
+    <!-- 清晰的 -->
+    <img src="images/apple100.jpg" alt="" />
+  </body>
+</html>

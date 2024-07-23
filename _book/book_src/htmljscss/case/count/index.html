@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h4>当前求和为：<span id="count">0</span></h4>
+    <select id="select">
+      <option value="1" selected>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <button onclick="increment()">+</button>&nbsp;
+    <button onclick="decrement()">-</button>&nbsp;
+    <button onclick="incrementIfOdd()">当前为奇数再加</button>&nbsp;
+    <button onclick="incrementAsync()">异步加</button>&nbsp;
+  </div>
+  <script>
+    const countElem = document.getElementById('count')
+    const selectElem = document.getElementById('select')
+
+    // 获取计数和选择值
+    function getState() {
+      return {
+        count: parseInt(countElem.innerText),
+        select: parseInt(selectElem.value)
+      }
+    }
+
+    function increment() {
+      const state = getState()
+      const newCount = state.count + state.select
+      countElem.innerText = newCount
+    }
+
+    function decrement() {
+      const state = getState()
+      const newCount = state.count - state.select
+      countElem.innerText = newCount
+    }
+
+    function incrementIfOdd() {
+      const state = getState()
+      if (state.count % 2 !== 0) {
+        const newCount = state.count + state.select
+        countElem.innerText = newCount
+      }
+    }
+
+    function incrementAsync() {
+      setTimeout(() => {
+        const state = getState()
+        const newCount = state.count + state.select
+        countElem.innerText = newCount
+      }, 1000)
+    }
+  </script>
+</body>
+</html>

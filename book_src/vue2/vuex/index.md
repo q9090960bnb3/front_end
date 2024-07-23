@@ -115,13 +115,13 @@
 ### vuex 模块化最终版
 
 {% codetab %}
-@import "t06_a/src/main.js" {title: "main.js"}
-@import "t06_a/src/store/index.js" {title: "store/index.js"}
-@import "t06_a/src/store/count.js" {title: "store/count.js"}
-@import "t06_a/src/store/person.js" {title: "store/person.js"}
-@import "t06_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t06_a/src/components/Count.vue"  {lang: "html", title: "Count.vue"}
-@import "t06_a/src/components/Person.vue"  {lang: "html", title: "MapCount.vue"}
+@import "t07_a/src/main.js" {title: "main.js"}
+@import "t07_a/src/store/index.js" {title: "store/index.js"}
+@import "t07_a/src/store/count.js" {title: "store/count.js"}
+@import "t07_a/src/store/persons.js" {title: "store/person.js"}
+@import "t07_a/src/App.vue" {lang: "html", title: "App.vue"}
+@import "t07_a/src/components/Count.vue"  {lang: "html", title: "Count.vue"}
+@import "t07_a/src/components/Person.vue"  {lang: "html", title: "MapCount.vue"}
 ```txt
 ```
 ```txt

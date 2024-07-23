@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin: 0px auto;
+      }
+
+      /*  */
+      div:hover {
+        /* transform: scale(x, y) x, y 为倍数 */
+        /* transform: scale(1, 1); */
+        /* transform: scale(2, 1); */
+
+        /* 等比例缩放 */
+        transform: scale(2);
+
+        /* 小于1就是缩放 */
+        /* transform: scale(0.5); */
+
+        /* scale优势：
+          1.不会影响其他盒子，可设置缩放中心点
+        
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    123123113
+  </body>
+</html>

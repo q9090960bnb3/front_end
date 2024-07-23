@@ -41,6 +41,8 @@
 @import "t02_a/src/components/MyFooter.vue"  {lang: "html", title: "MyFooter.vue"}
 ```txt
 ```
+```txt
+```
 {% endcodetab %}
 
 ## 自定义事件示例
@@ -56,6 +58,8 @@
 @import "t03_a/src/components/MyFooter.vue"  {lang: "html", title: "MyFooter.vue"}
 ```txt
 ```
+```txt
+```
 {% endcodetab %}
 
 ## 全局事件总线示例
@@ -69,6 +73,8 @@
 @import "t04_a/src/components/MyFooter.vue"  {lang: "html", title: "MyFooter.vue"}
 ```txt
 ```
+```txt
+```
 {% endcodetab %}
 
 ## 发布订阅示例
@@ -80,6 +86,8 @@
 @import "t05_a/src/components/MyList.vue"  {lang: "html", title: "MyList.vue"}
 @import "t05_a/src/components/MyItem.vue"  {lang: "html", title: "MyItem.vue"}
 @import "t05_a/src/components/MyFooter.vue"  {lang: "html", title: "MyFooter.vue"}
+```txt
+```
 ```txt
 ```
 {% endcodetab %}
