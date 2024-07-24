@@ -613,6 +613,7 @@ const router = new VueRouter({
     ...
 })
 ```
+
 {% codetab %}
 @import "t15_a/src/main.js" {title: "main.js"}
 @import "t15_a/src/router/index.js" {title: "router/index.js"}
