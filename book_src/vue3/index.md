@@ -47,3 +47,32 @@ pnpm create vite my-vue-app --template vue-ts
     "vue/multi-word-component-names": 0
 }
 ```
+
+### 定义 `src` 路径别名为 `@`
+
+- 设置 vite.config.ts 中 alias 来指定别名
+
+```ts
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import * as path from 'path'
+
+const alias = {
+  '@': path.resolve(__dirname, './src')
+}
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  resolve: {
+    alias
+  },
+  plugins: [vue()],
+})
+
+```
+
+### ts项目找不到 `__dirname` 的错误
+
+```sh
+pnpm i -D @types/node
+```
