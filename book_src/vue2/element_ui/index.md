@@ -7,8 +7,8 @@ pnpm i element-ui
 ## 全量引入
 
 {% codetabs %}
-@import "t00/src/main.js" {title="main.js"}
-@import "t00/src/App.vue" {as="html" title="App.vue"}
+@import "t00/src/main.js" {title="main.js" code_block=true}
+@import "t00/src/App.vue" {as="html" title="App.vue" code_block=true}
 {% endcodetabs %}
 
 ## 按需引入
@@ -32,6 +32,6 @@ plugins: [
 ```
 
 {% codetabs %}
-@import "t01/src/main.js" {title="main.js"}
-@import "t01/src/App.vue" {as="html" title="App.vue"}
+@import "t01/src/main.js" {title="main.js" code_block=true}
+@import "t01/src/App.vue" {as="html" title="App.vue" code_block=true}
 {% endcodetabs %}
