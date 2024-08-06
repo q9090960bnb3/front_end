@@ -42,3 +42,4 @@
 * [golang](book_src/golang/index.md)
   * [thirdlib](book_src/golang/thirdlib/index.md)
     * [cfgFile](book_src/golang/thirdlib/cfgFile/index.md)
+    * [hotreload](book_src/golang/thirdlib/hotreload/index.md)
