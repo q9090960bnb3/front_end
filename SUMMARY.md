@@ -39,3 +39,6 @@
   * [basic](book_src/vue3/basic/index.md)
   * [case](book_src/vue3/case/index.md)
     * [mousepoint](book_src/vue3/case/mousepoint/index.md)
+* [golang](book_src/golang/index.md)
+  * [thirdlib](book_src/golang/thirdlib/index.md)
+    * [cfgFile](book_src/golang/thirdlib/cfgFile/index.md)

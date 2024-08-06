@@ -2,8 +2,7 @@
     "plugins": [
         "password-z",
         "todos",
-        "gbook-import-code",
-        "gbook-codetab",
+        "gbook-codetabs",
         "expandable-chapters-small",
         "graphviz-and-plant-uml",
         "hide-element",

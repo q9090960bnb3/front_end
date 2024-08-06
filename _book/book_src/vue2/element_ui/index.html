@@ -21,7 +21,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-gbook-codetab/codetab/codetab.css">
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-gbook-codetabs/codetabs.css">
                 
             
                 
@@ -654,6 +654,57 @@
             
         </li>
     
+        <li class="chapter " data-level="1.5" data-path="../../golang/">
+            
+                <a href="../../golang/">
+            
+                    
+                    golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../golang/thirdlib/">
+            
+                <a href="../../golang/thirdlib/">
+            
+                    
+                    thirdlib
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../../golang/thirdlib/cfgFile/">
+            
+                <a href="../../golang/thirdlib/cfgFile/">
+            
+                    
+                    cfgFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -703,7 +754,8 @@
 <pre><code class="lang-sh">pnpm i element-ui
 </code></pre>
 <h2 id="&#x5168;&#x91CF;&#x5F15;&#x5165;"><a name="&#x5168;&#x91CF;&#x5F15;&#x5165;" class="anchor-navigation-ex-anchor" href="#&#x5168;&#x91CF;&#x5F15;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5168;&#x91CF;&#x5F15;&#x5165;</h2>
-<p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">main.js</div><div class="tab" data-codetab="1">App.vue</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue&quot;</span>;
+<p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">main.js</div><div class="tab" data-codetab="1">App.vue</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js">
+<span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue&quot;</span>;
 <span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./App.vue&apos;</span>
 <span class="hljs-keyword">import</span> ElementUI <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;element-ui&apos;</span>;
 <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;element-ui/lib/theme-chalk/index.css&apos;</span>;
@@ -712,7 +764,9 @@ Vue.use(ElementUI);
 
 <span class="hljs-keyword">new</span> Vue({
     render: h =&gt; h(App),
-}).$mount(<span class="hljs-string">&apos;#app&apos;</span>)</code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+}).$mount(<span class="hljs-string">&apos;#app&apos;</span>)
+</code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>&#x539F;&#x751F;&#x6309;&#x94AE;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> /&gt;</span>
@@ -731,7 +785,8 @@ Vue.use(ElementUI);
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
   name: <span class="hljs-string">&quot;App&quot;</span>,
 };
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre></div></div></div></p>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre></div></div></div></p>
 <h2 id="&#x6309;&#x9700;&#x5F15;&#x5165;"><a name="&#x6309;&#x9700;&#x5F15;&#x5165;" class="anchor-navigation-ex-anchor" href="#&#x6309;&#x9700;&#x5F15;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6309;&#x9700;&#x5F15;&#x5165;</h2>
 <pre><code class="lang-sh">pnpm i babel-plugin-component
 </code></pre>
@@ -748,7 +803,8 @@ Vue.use(ElementUI);
 ]
 ]
 </code></pre>
-<p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">main.js</div><div class="tab" data-codetab="1">App.vue</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue&quot;</span>;
+<p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">main.js</div><div class="tab" data-codetab="1">App.vue</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js">
+<span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue&quot;</span>;
 <span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./App.vue&apos;</span>
 <span class="hljs-keyword">import</span> { Button, Row } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;element-ui&apos;</span>;
 
@@ -757,7 +813,9 @@ Vue.component(Row.name, Row)
 
 <span class="hljs-keyword">new</span> Vue({
     render: h =&gt; h(App),
-}).$mount(<span class="hljs-string">&apos;#app&apos;</span>)</code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+}).$mount(<span class="hljs-string">&apos;#app&apos;</span>)
+</code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>&#x539F;&#x751F;&#x6309;&#x94AE;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> /&gt;</span>
@@ -776,7 +834,8 @@ Vue.component(Row.name, Row)
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
   name: <span class="hljs-string">&quot;App&quot;</span>,
 };
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre></div></div></div></p>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre></div></div></div></p>
 
                                 
                                 </section>
@@ -820,7 +879,7 @@ Vue.component(Row.name, Row)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"element_ui","level":"1.3.6","depth":2,"next":{"title":"case","level":"1.3.7","depth":2,"path":"book_src/vue2/case/index.md","ref":"book_src/vue2/case/index.md","articles":[{"title":"todo","level":"1.3.7.1","depth":3,"path":"book_src/vue2/case/todo/index.md","ref":"book_src/vue2/case/todo/index.md","articles":[]},{"title":"github搜索案例","level":"1.3.7.2","depth":3,"path":"book_src/vue2/case/github_search/index.md","ref":"book_src/vue2/case/github_search/index.md","articles":[]},{"title":"计数案例","level":"1.3.7.3","depth":3,"path":"book_src/vue2/case/count/index.md","ref":"book_src/vue2/case/count/index.md","articles":[]}]},"previous":{"title":"router","level":"1.3.5","depth":2,"path":"book_src/vue2/router/index.md","ref":"book_src/vue2/router/index.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["password-z","todos","gbook-import-code","gbook-codetab","expandable-chapters-small","graphviz-and-plant-uml","hide-element","anchor-navigation-ex","livereload"],"pluginsConfig":{"livereload":{},"search":{},"password-z":{},"graphviz-and-plant-uml":{"Render":"PlantUMLServer","Server":"http://www.plantuml.com/plantuml"},"gbook-codetab":{},"todos":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevelIcon":false,"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":false,"multipleH2":false,"associatedWithSummary":true,"multipleH3":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"multipleH4":false},"gbook-import-code":{},"expandable-chapters-small":{},"password":{"model":"global","settings":{"password":"996633"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"book_src/vue2/element_ui/index.md","mtime":"2024-07-24T02:38:25.975Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-25T09:18:42.614Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"element_ui","level":"1.3.6","depth":2,"next":{"title":"case","level":"1.3.7","depth":2,"path":"book_src/vue2/case/index.md","ref":"book_src/vue2/case/index.md","articles":[{"title":"todo","level":"1.3.7.1","depth":3,"path":"book_src/vue2/case/todo/index.md","ref":"book_src/vue2/case/todo/index.md","articles":[]},{"title":"github搜索案例","level":"1.3.7.2","depth":3,"path":"book_src/vue2/case/github_search/index.md","ref":"book_src/vue2/case/github_search/index.md","articles":[]},{"title":"计数案例","level":"1.3.7.3","depth":3,"path":"book_src/vue2/case/count/index.md","ref":"book_src/vue2/case/count/index.md","articles":[]}]},"previous":{"title":"router","level":"1.3.5","depth":2,"path":"book_src/vue2/router/index.md","ref":"book_src/vue2/router/index.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["password-z","todos","gbook-codetabs","expandable-chapters-small","graphviz-and-plant-uml","hide-element","anchor-navigation-ex","livereload"],"pluginsConfig":{"livereload":{},"gbook-codetabs":{},"search":{},"password-z":{},"graphviz-and-plant-uml":{"Render":"PlantUMLServer","Server":"http://www.plantuml.com/plantuml"},"todos":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevelIcon":false,"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":false,"multipleH2":false,"associatedWithSummary":true,"multipleH3":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"multipleH4":false},"expandable-chapters-small":{},"password":{"model":"global","settings":{"password":"996633"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"book_src/vue2/element_ui/index.md","mtime":"2024-08-06T08:36:02.428Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-08-06T08:46:38.156Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -834,7 +893,7 @@ Vue.component(Row.name, Row)
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-gbook-codetab/codetab/codetab.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-gbook-codetabs/codetabs.js"></script>
         
     
         

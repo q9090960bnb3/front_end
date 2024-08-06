@@ -29,27 +29,17 @@
 
 ### 各元素示例
 
-{% codetab %}
-@import "tBlock.html" {title: "块元素"}
-@import "tInline.html" {title: "块元素"}
-@import "tInline_block.html" {title: "块元素"}
-
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "tBlock.html" {title="块元素"}
+@import "tInline.html" {title="块元素"}
+@import "tInline_block.html" {title="块元素"}
+{% endcodetabs %}
 
 ### 显示模式转换
 
-{% codetab %}
+{% codetabs %}
 @import "t00.html"
-
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}
 
 ## 背景
 
@@ -125,14 +115,9 @@ div {
 }
 ```
 
-{% codetab %}
+{% codetabs %}
 @import "t01.html"
-
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}
 
 - 背景图片固定
 
@@ -144,14 +129,9 @@ div {
 }
 ```
 
-{% codetab %}
+{% codetabs %}
 @import "t02.html"
-
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}
 
 - 合并
 
@@ -162,14 +142,9 @@ div {
 }
 ```
 
-{% codetab %}
+{% codetabs %}
 @import "t03.html"
-
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}
 
 - 背景色半透明写法
 

@@ -2,11 +2,7 @@
 
 - 原html
 
-{% codetab %}
+{% codetabs %}
 @import "tsource/index.html"
 @import "tsource/index.css"
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}

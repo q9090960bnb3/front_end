@@ -2,48 +2,34 @@
 
 - 原html
 
-{% codetab %}
+{% codetabs %}
 @import "tsource/index.html"
 @import "tsource/index.css"
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}
 
 ## 基础示例
 
-{% codetab %}
+{% codetabs %}
 @import "t00_a/index.html"
 @import "t00_a/index.css"
 @import "t00_a/index.js"
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}
 
 ## 完整示例
 
-{% codetab %}
+{% codetabs %}
 @import "t01_a/index.html"
 @import "t01_a/index.css"
 @import "t01_a/index.js"
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}
 
 ## 本地保存示例
 
-{% codetab %}
+{% codetabs %}
 @import "t02_a/index.html"
 @import "t02_a/index.css"
 @import "t02_a/index.js"
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}
 
 ## 自定义事件示例
 
@@ -55,24 +41,20 @@
 
 ## 消息订阅和发布
 
-{% codetab %}
+{% codetabs %}
 @import "t03_a/index.html"
 @import "t03_a/index.css"
 @import "t03_a/index.js"
 @import "../../../../lib/my/pubsub.js"
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}
 
 ## 编辑功能
 
-{% codetab %}
+{% codetabs %}
 @import "t04_a/index.html"
 @import "t04_a/index.css"
 @import "t04_a/todoCentor.js"
 @import "t04_a/elementCentor.js"
 @import "t04_a/index.js"
 @import "../../../../lib/my/pubsub.js"
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}

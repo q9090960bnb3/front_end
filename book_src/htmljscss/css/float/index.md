@@ -10,27 +10,17 @@
 
 - 多个盒子横向排列，应用浮动(不会有间隙)
 
-{% codetab %}
+{% codetabs %}
 @import "t00.html"
-
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}
 
 ### 为什么需要浮动
 
 完成标准流不能完成的横向排列
 
-{% codetab %}
+{% codetabs %}
 @import "t01.html"
-
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}
 
 ### 浮动的排列特性
 
@@ -54,19 +44,14 @@ div {
 
 3.浮动元素会具有行内块元素得特性
 
-{% codetab %}
-@import "t02.html" {title: "脱标"}
-@import "t03.html" {title: "浮动盒子一行显示"}
-@import "t04.html" {title: "行内块特性"}
-@import "t05.html" {title: "浮动元素搭配标准流1"}
-@import "t06.html" {title: "浮动元素搭配标准流2"}
-@import "t07.html" {title: "浮动元素搭配标准流3"}
-
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t02.html" {title="脱标"}
+@import "t03.html" {title="浮动盒子一行显示"}
+@import "t04.html" {title="行内块特性"}
+@import "t05.html" {title="浮动元素搭配标准流1"}
+@import "t06.html" {title="浮动元素搭配标准流2"}
+@import "t07.html" {title="浮动元素搭配标准流3"}
+{% endcodetabs %}
 
 ### 能够说出为什么要清除浮动
 
@@ -89,17 +74,12 @@ div {
 
   1.额外标签法，也称隔墙法，w3c 推荐 2.父级添加 overflow 3.父级添加 after 伪元素 4.父级添加双伪元素
 
-{% codetab %}
-@import "t08.html" {title: "额外标签法"}
-@import "t09.html" {title: "父级添加 overflow"}
-@import "t10.html" {title: "父级添加 after 伪元素"}
-@import "t11.html" {title: "父级添加双伪元素"}
-
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t08.html" {title="额外标签法"}
+@import "t09.html" {title="父级添加 overflow"}
+@import "t10.html" {title="父级添加 after 伪元素"}
+@import "t11.html" {title="父级添加双伪元素"}
+{% endcodetabs %}
 
 ## 传统网页布局 3 种方式
 

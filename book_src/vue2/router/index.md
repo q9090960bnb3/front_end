@@ -7,17 +7,13 @@ pnpm i vue-router@3.5.3
 
 ## 基本使用
 
-{% codetab %}
-@import "t00_a/src/main.js" {title: "main.js"}
-@import "t00_a/src/router/index.js" {title: "router/index.js"}
-@import "t00_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t00_a/src/components/About.vue"  {lang: "html", title: "components/About.vue"}
-@import "t00_a/src/components/Home.vue"  {lang: "html", title: "components/Home.vue"}
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t00_a/src/main.js" {title="main.js" code_block=true}
+@import "t00_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t00_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t00_a/src/components/About.vue"  {as="html" title="components/About.vue" code_block=true}
+@import "t00_a/src/components/Home.vue"  {as="html" title="components/Home.vue" code_block=true}
+{% endcodetabs %}
 
 ## 标准化
 
@@ -37,20 +33,14 @@ pnpm i vue-router@3.5.3
 
 - 代码
 
-{% codetab %}
-@import "t01_a/src/main.js" {title: "main.js"}
-@import "t01_a/src/router/index.js" {title: "router/index.js"}
-@import "t01_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t01_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t01_a/src/pages/Home.vue"  {lang: "html", title: "pages/Home.vue"}
-@import "t01_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t01_a/src/main.js" {title="main.js" code_block=true}
+@import "t01_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t01_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t01_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t01_a/src/pages/Home.vue"  {as="html" title="pages/Home.vue" code_block=true}
+@import "t01_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## 嵌套路由
 
@@ -73,22 +63,16 @@ pnpm i vue-router@3.5.3
 
 - 代码
 
-{% codetab %}
-@import "t02_a/src/main.js" {title: "main.js"}
-@import "t02_a/src/router/index.js" {title: "router/index.js"}
-@import "t02_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t02_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t02_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t02_a/src/pages/Home/Message.vue"  {lang: "html", title: "/pages/Home/Message.vue"}
-@import "t02_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t02_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t02_a/src/main.js" {title="main.js" code_block=true}
+@import "t02_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t02_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t02_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t02_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t02_a/src/pages/Home/Message.vue"  {as="html" title="/pages/Home/Message.vue" code_block=true}
+@import "t02_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t02_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## query 传参
 
@@ -106,25 +90,17 @@ pnpm i vue-router@3.5.3
 }">{{o.title}}</router-link>
 ```
 
-{% codetab %}
-@import "t03_a/src/main.js" {title: "main.js"}
-@import "t03_a/src/router/index.js" {title: "router/index.js"}
-@import "t03_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t03_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t03_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t03_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t03_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t03_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t03_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t03_a/src/main.js" {title="main.js" code_block=true}
+@import "t03_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t03_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t03_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t03_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t03_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t03_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t03_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t03_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## 命名路由
 
@@ -156,25 +132,17 @@ pnpm i vue-router@3.5.3
 }">{{o.title}}</router-link>
 ```
 
-{% codetab %}
-@import "t04_a/src/main.js" {title: "main.js"}
-@import "t04_a/src/router/index.js" {title: "router/index.js"}
-@import "t04_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t04_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t04_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t04_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t04_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t04_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t04_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t04_a/src/main.js" {title="main.js" code_block=true}
+@import "t04_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t04_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t04_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t04_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t04_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t04_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t04_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t04_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## params 传参
 
@@ -192,25 +160,17 @@ pnpm i vue-router@3.5.3
 }">{{o.title}}</router-link>
 ```
 
-{% codetab %}
-@import "t05_a/src/main.js" {title: "main.js"}
-@import "t05_a/src/router/index.js" {title: "router/index.js"}
-@import "t05_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t05_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t05_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t05_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t05_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t05_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t05_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t05_a/src/main.js" {title="main.js" code_block=true}
+@import "t05_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t05_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t05_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t05_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t05_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t05_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t05_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t05_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## props 方式传参
 
@@ -282,25 +242,17 @@ export default {
 }
 ```
 
-{% codetab %}
-@import "t06_a/src/main.js" {title: "main.js"}
-@import "t06_a/src/router/index.js" {title: "router/index.js"}
-@import "t06_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t06_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t06_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t06_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t06_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t06_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t06_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t06_a/src/main.js" {title="main.js" code_block=true}
+@import "t06_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t06_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t06_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t06_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t06_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t06_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t06_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t06_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## 编程式路由导航
 
@@ -329,25 +281,17 @@ replaceShow(o) {
 - $router.replace : 历史信息不会增加记录，替换历史记录中最后一条记录为当前路由
 - 不能跳转同一路由页面，否则报错
 
-{% codetab %}
-@import "t07_a/src/main.js" {title: "main.js"}
-@import "t07_a/src/router/index.js" {title: "router/index.js"}
-@import "t07_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t07_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t07_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t07_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t07_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t07_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t07_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t07_a/src/main.js" {title="main.js" code_block=true}
+@import "t07_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t07_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t07_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t07_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t07_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t07_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t07_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t07_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## 缓存路由
 
@@ -358,21 +302,17 @@ replaceShow(o) {
 </keep-alive>
 ```
 
-{% codetab %}
-@import "t08_a/src/main.js" {title: "main.js"}
-@import "t08_a/src/router/index.js" {title: "router/index.js"}
-@import "t08_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t08_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t08_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t08_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t08_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t08_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t08_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t08_a/src/main.js" {title="main.js" code_block=true}
+@import "t08_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t08_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t08_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t08_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t08_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t08_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t08_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t08_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## 路由钩子
 
@@ -389,25 +329,17 @@ deactivated(){  // News组件消失（失活）
 }
 ```
 
-{% codetab %}
-@import "t09_a/src/main.js" {title: "main.js"}
-@import "t09_a/src/router/index.js" {title: "router/index.js"}
-@import "t09_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t09_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t09_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t09_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t09_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t09_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t09_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t09_a/src/main.js" {title="main.js" code_block=true}
+@import "t09_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t09_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t09_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t09_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t09_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t09_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t09_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t09_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## 全局前置守卫
 
@@ -427,25 +359,17 @@ else{
 })
 ```
 
-{% codetab %}
-@import "t10_a/src/main.js" {title: "main.js"}
-@import "t10_a/src/router/index.js" {title: "router/index.js"}
-@import "t10_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t10_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t10_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t10_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t10_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t10_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t10_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t10_a/src/main.js" {title="main.js" code_block=true}
+@import "t10_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t10_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t10_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t10_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t10_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t10_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t10_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t10_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## 路由元信息
 
@@ -459,25 +383,17 @@ meta: {
 
 增加后可以在路由守卫中用来做判断
 
-{% codetab %}
-@import "t11_a/src/main.js" {title: "main.js"}
-@import "t11_a/src/router/index.js" {title: "router/index.js"}
-@import "t11_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t11_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t11_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t11_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t11_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t11_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t11_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t11_a/src/main.js" {title="main.js" code_block=true}
+@import "t11_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t11_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t11_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t11_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t11_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t11_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t11_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t11_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## 全局后置守卫
 
@@ -488,25 +404,17 @@ router.afterEach((to, from) => {
 })
 ```
 
-{% codetab %}
-@import "t12_a/src/main.js" {title: "main.js"}
-@import "t12_a/src/router/index.js" {title: "router/index.js"}
-@import "t12_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t12_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t12_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t12_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t12_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t12_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t12_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t12_a/src/main.js" {title="main.js" code_block=true}
+@import "t12_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t12_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t12_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t12_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t12_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t12_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t12_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t12_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## 独享路由守卫
 
@@ -532,25 +440,17 @@ router.afterEach((to, from) => {
 },
 ```
 
-{% codetab %}
-@import "t13_a/src/main.js" {title: "main.js"}
-@import "t13_a/src/router/index.js" {title: "router/index.js"}
-@import "t13_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t13_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t13_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t13_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t13_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t13_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t13_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t13_a/src/main.js" {title="main.js" code_block=true}
+@import "t13_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t13_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t13_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t13_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t13_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t13_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t13_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t13_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## 组件内路由守卫
 
@@ -582,25 +482,17 @@ beforeRouteLeave (to, from, next) {
 }
 ```
 
-{% codetab %}
-@import "t14_a/src/main.js" {title: "main.js"}
-@import "t14_a/src/router/index.js" {title: "router/index.js"}
-@import "t14_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t14_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t14_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t14_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t14_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t14_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t14_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-```txt
-```
-```txt
-```
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t14_a/src/main.js" {title="main.js" code_block=true}
+@import "t14_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t14_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t14_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t14_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t14_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t14_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t14_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t14_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}
 
 ## 路由模式
 
@@ -614,16 +506,14 @@ const router = new VueRouter({
 })
 ```
 
-{% codetab %}
-@import "t15_a/src/main.js" {title: "main.js"}
-@import "t15_a/src/router/index.js" {title: "router/index.js"}
-@import "t15_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t15_a/src/pages/About.vue"  {lang: "html", title: "pages/About.vue"}
-@import "t15_a/src/pages/Home/index.vue"  {lang: "html", title: "/pages/Home/index.vue"}
-@import "t15_a/src/pages/Home/News.vue"  {lang: "html", title: "/pages/Home/News.vue"}
-@import "t15_a/src/pages/Home/Message/index.vue"  {lang: "html", title: "/pages/Home/Message/index.vue"}
-@import "t15_a/src/pages/Home/Message/Detail.vue"  {lang: "html", title: "/pages/Home/Message/Detail.vue"}
-@import "t15_a/src/components/Banner.vue"  {lang: "html", title: "components/Banner.vue"}
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t15_a/src/main.js" {title="main.js" code_block=true}
+@import "t15_a/src/router/index.js" {title="router/index.js" code_block=true}
+@import "t15_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t15_a/src/pages/About.vue"  {as="html" title="pages/About.vue" code_block=true}
+@import "t15_a/src/pages/Home/index.vue"  {as="html" title="/pages/Home/index.vue" code_block=true}
+@import "t15_a/src/pages/Home/News.vue"  {as="html" title="/pages/Home/News.vue" code_block=true}
+@import "t15_a/src/pages/Home/Message/index.vue"  {as="html" title="/pages/Home/Message/index.vue" code_block=true}
+@import "t15_a/src/pages/Home/Message/Detail.vue"  {as="html" title="/pages/Home/Message/Detail.vue" code_block=true}
+@import "t15_a/src/components/Banner.vue"  {as="html" title="components/Banner.vue" code_block=true}
+{% endcodetabs %}

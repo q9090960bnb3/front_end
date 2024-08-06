@@ -26,9 +26,9 @@ export default {
   data() {
     return {
       messageList: [
-        {id: '001', title: '下来的时间'},
-        {id: '002', title: '找了家旅馆'},
-        {id: '003', title: '起来看高清'}
+        {id: '001' title='下来的时间'},
+        {id: '002' title='找了家旅馆'},
+        {id: '003' title='起来看高清'}
       ]
     }
   },

@@ -2,82 +2,68 @@
 
 ## 基础示例
 
-{% codetab %}
-@import "t00_a/src/main.js" {title: "main.js"}
-@import "t00_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t00_a/src/components/School.vue"  {lang: "html", title: "School.vue"}
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t00_a/src/main.js" {title="main.js" code_block=true}
+@import "t00_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t00_a/src/components/School.vue"  {as="html" title="School.vue" code_block=true}
+{% endcodetabs %}
 
 ## ref属性
 
-{% codetab %}
-@import "t01_a/src/main.js" {title: "main.js"}
-@import "t01_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t01_a/src/components/School.vue"  {lang: "html", title: "School.vue"}
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t01_a/src/main.js" {title="main.js" code_block=true}
+@import "t01_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t01_a/src/components/School.vue"  {as="html" title="School.vue" code_block=true}
+{% endcodetabs %}
 
 ## props配置
 
 - `:` 属性带冒号，必须传入指定类型，否则抛出错误
 
-{% codetab %}
-@import "t02_a/src/main.js" {title: "main.js"}
-@import "t02_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t02_a/src/components/Student.vue"  {lang: "html", title: "Student.vue"}
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t02_a/src/main.js" {title="main.js" code_block=true}
+@import "t02_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t02_a/src/components/Student.vue"  {as="html" title="Student.vue" code_block=true}
+{% endcodetabs %}
 
 ## 混合，共享配置
 
-{% codetab %}
-@import "t03_a/src/main.js" {title: "main.js"}
-@import "t03_a/src/mixin.js" {title: "mixin.js"}
-@import "t03_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t03_a/src/components/Student.vue"  {lang: "html", title: "Student.vue"}
-@import "t03_a/src/components/School.vue"  {lang: "html", title: "School.vue"}
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t03_a/src/main.js" {title="main.js" code_block=true}
+@import "t03_a/src/mixin.js" {title="mixin.js" code_block=true}
+@import "t03_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t03_a/src/components/Student.vue"  {as="html" title="Student.vue" code_block=true}
+@import "t03_a/src/components/School.vue"  {as="html" title="School.vue" code_block=true}
+{% endcodetabs %}
 
 ## 插件
 
-{% codetab %}
-@import "t04_a/src/plugins.js" {title: "plugins.js"}
-@import "t04_a/src/main.js" {title: "main.js"}
-@import "t04_a/src/App.vue" {lang: "html", title: "App.vue"}
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t04_a/src/plugins.js" {title="plugins.js" code_block=true}
+@import "t04_a/src/main.js" {title="main.js" code_block=true}
+@import "t04_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+{% endcodetabs %}
 
 ## scoped 限制
 
 - 限制样式为当前组件使用
 - 此示例使用 less 来混入样式，需 `pnpm i -D less less-loader` 来安装依赖
 
-{% codetab %}
-@import "t05_a/src/main.js" {title: "main.js"}
-@import "t05_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t05_a/src/components/Student.vue"  {lang: "html", title: "Student.vue"}
-@import "t05_a/src/components/School.vue"  {lang: "html", title: "School.vue"}
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t05_a/src/main.js" {title="main.js" code_block=true}
+@import "t05_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t05_a/src/components/Student.vue"  {as="html" title="Student.vue" code_block=true}
+@import "t05_a/src/components/School.vue"  {as="html" title="School.vue" code_block=true}
+{% endcodetabs %}
 
 ## 自定义事件
 
-{% codetab %}
-@import "t06_a/src/main.js" {title: "main.js"}
-@import "t06_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t06_a/src/components/Student.vue"  {lang: "html", title: "Student.vue"}
-@import "t06_a/src/components/School.vue"  {lang: "html", title: "School.vue"}
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t06_a/src/main.js" {title="main.js" code_block=true}
+@import "t06_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t06_a/src/components/Student.vue"  {as="html" title="Student.vue" code_block=true}
+@import "t06_a/src/components/School.vue"  {as="html" title="School.vue" code_block=true}
+{% endcodetabs %}
 
 ## 使用发布订阅
 
@@ -85,14 +71,12 @@
 pnpm install pubsub-js
 ```
 
-{% codetab %}
-@import "t07_a/src/main.js" {title: "main.js"}
-@import "t07_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t07_a/src/components/Student.vue"  {lang: "html", title: "Student.vue"}
-@import "t07_a/src/components/School.vue"  {lang: "html", title: "School.vue"}
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t07_a/src/main.js" {title="main.js" code_block=true}
+@import "t07_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t07_a/src/components/Student.vue"  {as="html" title="Student.vue" code_block=true}
+@import "t07_a/src/components/School.vue"  {as="html" title="School.vue" code_block=true}
+{% endcodetabs %}
 
 ## 动画
 
@@ -108,23 +92,21 @@ pnpm install pubsub-js
 .v-leave-to: 应用于元素在离开过渡结束时。
 这些类名的前缀 v- 可以通过 <transition> 组件的 name 属性来改变。例如，如果 <transition> 组件使用了 name="slide"，那么类名将变为 slide-enter, slide-enter-active, slide-enter-to, slide-leave, slide-leave-active, slide-leave-to。
 
-{% codetab %}
-@import "t08_a/src/main.js" {title: "main.js"}
-@import "t08_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t08_a/src/components/Test.vue"  {lang: "html", title: "Student.vue"}
-@import "t08_a/src/components/Test2.vue"  {lang: "html", title: "School.vue"}
-@import "t08_a/src/components/Test3.vue"  {lang: "html", title: "School.vue"}
-@import "t08_a/src/components/Test4.vue"  {lang: "html", title: "School.vue"}
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t08_a/src/main.js" {title="main.js" code_block=true}
+@import "t08_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t08_a/src/components/Test.vue"  {as="html" title="Student.vue" code_block=true}
+@import "t08_a/src/components/Test2.vue"  {as="html" title="School.vue" code_block=true}
+@import "t08_a/src/components/Test3.vue"  {as="html" title="School.vue" code_block=true}
+@import "t08_a/src/components/Test4.vue"  {as="html" title="School.vue" code_block=true}
+{% endcodetabs %}
 
 ## 跨域问题
 
 - 开启代理服务器
 
-{% codetab %}
-```js {title: "单个代理服务器"}
+{% codetabs %}
+```js {title="单个代理服务器" code_block=true}
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
@@ -135,40 +117,30 @@ module.exports = defineConfig({
   }
 })
 ```
-@import "t09_a/vue.config.js" {title: "多个代理服务器"}
-```txt
-```
-```txt
-```
-{% endcodetab %}
+@import "t09_a/vue.config.js" {title="多个代理服务器" code_block=true}
+{% endcodetabs %}
 
 - 服务端示例
 
-{% codetab %}
+{% codetabs %}
 @import "t09_a/server1.js"
 @import "t09_a/server2.js"
-```txt
-```
-{% endcodetab %}
+{% endcodetabs %}
 
 - 客户端示例
 
-{% codetab %}
-@import "t09_a/src/main.js" {title: "main.js"}
-@import "t09_a/src/App.vue" {lang: "html", title: "App.vue"}
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t09_a/src/main.js" {title="main.js" code_block=true}
+@import "t09_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+{% endcodetabs %}
 
 ## 插槽
 
-{% codetab %}
-@import "t10_a/src/main.js" {title: "main.js"}
-@import "t10_a/src/App.vue" {lang: "html", title: "App.vue"}
-@import "t10_a/src/components/ZoneCategory.vue"  {lang: "html", title: "ZoneCategory.vue"}
-@import "t10_a/src/components/SlotNameCategory.vue"  {lang: "html", title: "SlotNameCategory.vue"}
-@import "t10_a/src/components/SlotCategory.vue"  {lang: "html", title: "SlotCategory.vue"}
-@import "t10_a/src/components/Category.vue"  {lang: "html", title: "School.vue"}
-```txt
-```
-{% endcodetab %}
+{% codetabs %}
+@import "t10_a/src/main.js" {title="main.js" code_block=true}
+@import "t10_a/src/App.vue" {as="html" title="App.vue" code_block=true}
+@import "t10_a/src/components/ZoneCategory.vue"  {as="html" title="ZoneCategory.vue" code_block=true}
+@import "t10_a/src/components/SlotNameCategory.vue"  {as="html" title="SlotNameCategory.vue" code_block=true}
+@import "t10_a/src/components/SlotCategory.vue"  {as="html" title="SlotCategory.vue" code_block=true}
+@import "t10_a/src/components/Category.vue"  {as="html" title="School.vue" code_block=true}
+{% endcodetabs %}
