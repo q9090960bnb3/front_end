@@ -2,6 +2,14 @@ package common
 
 import "errors"
 
+type Args struct {
+	A, B int
+}
+
+type Quotient struct {
+	Quo, Rem int
+}
+
 type Arith struct{}
 
 func (t *Arith) Multiply(args *Args, reply *int) error {

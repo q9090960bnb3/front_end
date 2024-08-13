@@ -31,7 +31,6 @@ func main() {
 	if err := g.Wait(); err == nil {
 		fmt.Println("exec done")
 	} else {
-		fmt.Println("failed: ", err)
 		fmt.Printf("failed: %+v\n", err)
 	}
 }

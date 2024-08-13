@@ -40,6 +40,8 @@
   * [case](book_src/vue3/case/index.md)
     * [mousepoint](book_src/vue3/case/mousepoint/index.md)
 * [golang](book_src/golang/index.md)
+  * [stdlib](book_src/golang/stdlib/index.md)
+    * [rpc](book_src/golang/stdlib/rpc/index.md)
   * [thirdlib](book_src/golang/thirdlib/index.md)
     * [cfgFile](book_src/golang/thirdlib/cfgFile/index.md)
     * [hotreload](book_src/golang/thirdlib/hotreload/index.md)
