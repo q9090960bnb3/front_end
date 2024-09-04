@@ -25,6 +25,7 @@
 @import "t00_c/src/App.vue" {as="html" title="App.vue" code_block=true}
 @import "t00_c/src/components/HelloWorld.vue"  {as="html" title="HelloWorld.vue" code_block=true}
 {% endcodetabs %}
+
 ** 因为 vite 启动速度快，所有后面示例均用 vite js 版本
 
 ## setup 返回对象

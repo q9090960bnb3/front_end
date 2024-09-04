@@ -37,6 +37,7 @@
     * [计数案例](book_src/vue2/case/count/index.md)
 * [vue3框架](book_src/vue3/index.md)
   * [basic](book_src/vue3/basic/index.md)
+  * [basic3_5](book_src/vue3/basic3_5/index.md)
   * [case](book_src/vue3/case/index.md)
     * [mousepoint](book_src/vue3/case/mousepoint/index.md)
 * [golang](book_src/golang/index.md)
